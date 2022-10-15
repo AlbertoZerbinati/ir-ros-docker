@@ -1,0 +1,19 @@
+Notes from the first lecture in the lab.
+
+Basically a ROS introduction.
+
+ros = robot operating system. A framework to build programs for robots. modular. industry standard. large community.
+not an OS, not a programming language. programmable in C++ and Python mainly. 
+handles distributed computation. 
+
+Modular: NODE-BASED solution. each program is a node that handles one part of the robot (vision, moving an arm, etc.).
+
+effectively it is a distributed system. messagging protocol across nodes: publish/subscribe messages (anonymus and asynchronous)
+there is also a master node controlling everything
+recording and playingback the messages
+logging system
+a message is called TOPIC (/topic) and is sent from one NODE (= program) to another
+many messages are shared concurrently and read asynchronously by subscribers
+can also be made synchronous
+global store available
+shareable and reusable
