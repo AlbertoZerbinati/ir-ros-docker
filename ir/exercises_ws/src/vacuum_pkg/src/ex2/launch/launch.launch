@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node name ="server" pkg="vacuum_pkg" type="robot_server_node"/>
+    <node name ="client423" pkg="vacuum_pkg" type="charging_station_client_node" args="423"/>
+    <node name ="client424" pkg="vacuum_pkg" type="charging_station_client_node" args="424"/>
+    <node name ="client425" pkg="vacuum_pkg" type="charging_station_client_node" args="425"/>
+    <node name ="client427" pkg="vacuum_pkg" type="charging_station_client_node" args="427"/>
+</launch>
