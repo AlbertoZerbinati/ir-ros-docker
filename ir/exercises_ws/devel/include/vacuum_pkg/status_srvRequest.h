@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_srvRequest.h

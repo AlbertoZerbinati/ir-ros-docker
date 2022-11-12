@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/ir-ros-docker/ir/course_ws/install/setup.sh

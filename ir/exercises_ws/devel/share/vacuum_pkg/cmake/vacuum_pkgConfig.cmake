@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/cmake/vacuum_pkgConfig.cmake

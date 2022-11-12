@@ -1,0 +1,39 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  4%] [32mBuilding CXX object CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o[0m
+[  4%] Built target _vacuum_pkg_generate_messages_check_deps_status_srv
+[  4%] Built target _vacuum_pkg_generate_messages_check_deps_status_msg
+[  4%] Built target std_msgs_generate_messages_lisp
+[  4%] Built target std_msgs_generate_messages_eus
+[  4%] Built target std_msgs_generate_messages_nodejs
+[  9%] [32mBuilding CXX object CMakeFiles/robot_node.dir/src/ex1/robot_pub.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/robot_server_node.dir/src/ex2/robot_server.cpp.o[0m
+[ 38%] Built target vacuum_pkg_generate_messages_py
+[35m[1mScanning dependencies of target vacuum_pkg_generate_messages_cpp[0m
+[ 42%] [34m[1mGenerating C++ code from vacuum_pkg/status_msg.msg[0m
+[ 47%] [34m[1mGenerating C++ code from vacuum_pkg/status_srv.srv[0m
+[ 47%] Built target vacuum_pkg_generate_messages_cpp
+[35m[1mScanning dependencies of target vacuum_pkg_generate_messages_eus[0m
+[ 52%] [34m[1mGenerating EusLisp code from vacuum_pkg/status_msg.msg[0m
+[ 57%] [34m[1mGenerating EusLisp code from vacuum_pkg/status_srv.srv[0m
+[ 61%] [34m[1mGenerating EusLisp manifest code for vacuum_pkg[0m
+[ 66%] [32m[1mLinking CXX executable /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node[0m
+[ 71%] [32m[1mLinking CXX executable /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_server_node[0m
+[ 76%] [32m[1mLinking CXX executable /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/charging_station_client_node[0m
+[ 76%] Built target vacuum_pkg_generate_messages_eus
+[ 76%] Built target robot_node
+[35m[1mScanning dependencies of target vacuum_pkg_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target vacuum_pkg_generate_messages_nodejs[0m
+[ 76%] Built target robot_server_node
+[ 80%] [34m[1mGenerating Lisp code from vacuum_pkg/status_msg.msg[0m
+[ 85%] [34m[1mGenerating Javascript code from vacuum_pkg/status_msg.msg[0m
+[ 90%] [34m[1mGenerating Lisp code from vacuum_pkg/status_srv.srv[0m
+[ 95%] [32m[1mLinking CXX executable /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/charging_station_node[0m
+[100%] [34m[1mGenerating Javascript code from vacuum_pkg/status_srv.srv[0m
+[100%] Built target charging_station_client_node
+[100%] Built target vacuum_pkg_generate_messages_lisp
+[100%] Built target vacuum_pkg_generate_messages_nodejs
+[35m[1mScanning dependencies of target vacuum_pkg_generate_messages[0m
+[100%] Built target vacuum_pkg_generate_messages
+[100%] Built target charging_station_node

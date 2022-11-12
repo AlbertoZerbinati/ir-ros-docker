@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/share/gennodejs/ros/srv_tutorial/srv/_index.js

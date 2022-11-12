@@ -1,0 +1,8 @@
+prefix=/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg
+
+Name: vacuum_pkg
+Description: Description of vacuum_pkg
+Version: 0.0.0
+Cflags: -I/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime

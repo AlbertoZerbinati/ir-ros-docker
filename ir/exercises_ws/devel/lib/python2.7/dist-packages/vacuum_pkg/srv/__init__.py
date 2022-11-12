@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/python2.7/dist-packages/vacuum_pkg/srv/__init__.py
