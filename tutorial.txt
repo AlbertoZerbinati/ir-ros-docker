@@ -17,3 +17,12 @@ many messages are shared concurrently and read asynchronously by subscribers
 can also be made synchronous
 global store available
 shareable and reusable
+
+---
+3 ways to talk between nodes:
+- async messages through a topic
+- services (client/server communication) for short/quick operations to be fulfilled
+- actions
+
+a srv (service) requires both request and response in the file definition
+we need a client and a service node
