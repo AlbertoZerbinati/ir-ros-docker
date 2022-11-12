@@ -60,13 +60,58 @@ CMAKE_SOURCE_DIR = /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg
 CMAKE_BINARY_DIR = /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg
 
 #=============================================================================
+# Target rules for target CMakeFiles/robot_action_server_node.dir
+
+# All Build rule for target.
+CMakeFiles/robot_action_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/robot_action_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/robot_action_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/robot_action_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/robot_action_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/depend
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=18,19 "Built target robot_action_server_node"
+.PHONY : CMakeFiles/robot_action_server_node.dir/all
+
+# Include target in all.
+all: CMakeFiles/robot_action_server_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_action_server_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robot_action_server_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/robot_action_server_node.dir/rule
+
+# Convenience name for target.
+robot_action_server_node: CMakeFiles/robot_action_server_node.dir/rule
+
+.PHONY : robot_action_server_node
+
+# clean rule for target.
+CMakeFiles/robot_action_server_node.dir/clean:
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/clean
+.PHONY : CMakeFiles/robot_action_server_node.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robot_action_server_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/charging_station_client_node.dir
 
 # All Build rule for target.
-CMakeFiles/charging_station_client_node.dir/all:
+CMakeFiles/charging_station_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/charging_station_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/charging_station_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/charging_station_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/charging_station_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
 	$(MAKE) -f CMakeFiles/charging_station_client_node.dir/build.make CMakeFiles/charging_station_client_node.dir/depend
 	$(MAKE) -f CMakeFiles/charging_station_client_node.dir/build.make CMakeFiles/charging_station_client_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=1,2 "Built target charging_station_client_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=3,4 "Built target charging_station_client_node"
 .PHONY : CMakeFiles/charging_station_client_node.dir/all
 
 # Include target in all.
@@ -76,7 +121,7 @@ all: CMakeFiles/charging_station_client_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/charging_station_client_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/charging_station_client_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/charging_station_client_node.dir/rule
@@ -93,6 +138,374 @@ CMakeFiles/charging_station_client_node.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/charging_station_client_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/robot_server_node.dir
+
+# All Build rule for target.
+CMakeFiles/robot_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/robot_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/robot_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/robot_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/robot_server_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/depend
+	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=22,23 "Built target robot_server_node"
+.PHONY : CMakeFiles/robot_server_node.dir/all
+
+# Include target in all.
+all: CMakeFiles/robot_server_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_server_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robot_server_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/robot_server_node.dir/rule
+
+# Convenience name for target.
+robot_server_node: CMakeFiles/robot_server_node.dir/rule
+
+.PHONY : robot_server_node
+
+# clean rule for target.
+CMakeFiles/robot_server_node.dir/clean:
+	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/clean
+.PHONY : CMakeFiles/robot_server_node.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robot_server_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60 "Built target vacuum_pkg_generate_messages_nodejs"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_generate_messages_nodejs: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule
+
+.PHONY : vacuum_pkg_generate_messages_nodejs
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_genlisp.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_genlisp.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_genlisp"
+.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_genlisp: CMakeFiles/vacuum_pkg_genlisp.dir/rule
+
+.PHONY : vacuum_pkg_genlisp
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_genlisp.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/robot_node.dir
+
+# All Build rule for target.
+CMakeFiles/robot_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/robot_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/robot_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/robot_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/robot_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/depend
+	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=20,21 "Built target robot_node"
+.PHONY : CMakeFiles/robot_node.dir/all
+
+# Include target in all.
+all: CMakeFiles/robot_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robot_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robot_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/robot_node.dir/rule
+
+# Convenience name for target.
+robot_node: CMakeFiles/robot_node.dir/rule
+
+.PHONY : robot_node
+
+# clean rule for target.
+CMakeFiles/robot_node.dir/clean:
+	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/clean
+.PHONY : CMakeFiles/robot_node.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robot_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_lisp.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51 "Built target vacuum_pkg_generate_messages_lisp"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_generate_messages_lisp: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule
+
+.PHONY : vacuum_pkg_generate_messages_lisp
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_geneus.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_geneus.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_geneus"
+.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_geneus: CMakeFiles/vacuum_pkg_geneus.dir/rule
+
+.PHONY : vacuum_pkg_geneus
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_geneus.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_geneus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_eus.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=33,34,35,36,37,38,39,40,41,42 "Built target vacuum_pkg_generate_messages_eus"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_generate_messages_eus: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule
+
+.PHONY : vacuum_pkg_generate_messages_eus
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_gencpp.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_gencpp.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_gencpp"
+.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_gencpp: CMakeFiles/vacuum_pkg_gencpp.dir/rule
+
+.PHONY : vacuum_pkg_gencpp
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_gencpp.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusAction"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_StatusAction: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusAction
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusGoal"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_StatusGoal: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusGoal
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/clean
 
 .PHONY : clean
 
@@ -161,34 +574,34 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir
 
 # All Build rule for target.
-CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/all
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusActionResult"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+_vacuum_pkg_generate_messages_check_deps_StatusActionResult: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/rule
 
-.PHONY : std_msgs_generate_messages_eus
-
-# clean rule for target.
-CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionResult
 
 # clean rule for target.
-clean: CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/clean
 
 .PHONY : clean
 
@@ -257,6 +670,70 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_cpp"
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# clean rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusResult"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_StatusResult: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusResult
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -289,6 +766,80 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_py.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70,71 "Built target vacuum_pkg_generate_messages_py"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_generate_messages_py: CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule
+
+.PHONY : vacuum_pkg_generate_messages_py
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -317,6 +868,70 @@ CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/std_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# clean rule for target.
+CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/clean
 
 .PHONY : clean
 
@@ -381,72 +996,6 @@ CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/roscpp_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_cpp.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=20,21 "Built target vacuum_pkg_generate_messages_cpp"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages_cpp: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages_cpp
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_geneus.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_geneus.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_geneus"
-.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_geneus: CMakeFiles/vacuum_pkg_geneus.dir/rule
-
-.PHONY : vacuum_pkg_geneus
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_geneus.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_geneus.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_geneus.dir/clean
 
 .PHONY : clean
 
@@ -547,6 +1096,38 @@ clean: CMakeFiles/download_extra_data.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_nodejs"
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# clean rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
@@ -611,40 +1192,6 @@ clean: CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_eus.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=22,23,24 "Built target vacuum_pkg_generate_messages_eus"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages_eus: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages_eus
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/vacuum_pkg_genpy.dir
 
 # All Build rule for target.
@@ -656,7 +1203,7 @@ CMakeFiles/vacuum_pkg_genpy.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vacuum_pkg_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/vacuum_pkg_genpy.dir/rule
@@ -741,6 +1288,38 @@ clean: CMakeFiles/doxygen.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusActionGoal"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionGoal: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionGoal
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -801,6 +1380,377 @@ CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_generate_messages_eus.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_generate_messages_eus.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_eus.dir/build.make CMakeFiles/actionlib_generate_messages_eus.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_eus.dir/build.make CMakeFiles/actionlib_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_generate_messages_eus"
+.PHONY : CMakeFiles/actionlib_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# clean rule for target.
+CMakeFiles/actionlib_generate_messages_eus.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_eus.dir/build.make CMakeFiles/actionlib_generate_messages_eus.dir/clean
+.PHONY : CMakeFiles/actionlib_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_generate_messages_lisp.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_generate_messages_lisp.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_generate_messages_lisp.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_generate_messages_lisp"
+.PHONY : CMakeFiles/actionlib_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# clean rule for target.
+CMakeFiles/actionlib_generate_messages_lisp.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+.PHONY : CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/charging_station_node.dir
+
+# All Build rule for target.
+CMakeFiles/charging_station_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/charging_station_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/charging_station_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/charging_station_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/charging_station_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/depend
+	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=5,6 "Built target charging_station_node"
+.PHONY : CMakeFiles/charging_station_node.dir/all
+
+# Include target in all.
+all: CMakeFiles/charging_station_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/charging_station_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/charging_station_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/charging_station_node.dir/rule
+
+# Convenience name for target.
+charging_station_node: CMakeFiles/charging_station_node.dir/rule
+
+.PHONY : charging_station_node
+
+# clean rule for target.
+CMakeFiles/charging_station_node.dir/clean:
+	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/clean
+.PHONY : CMakeFiles/charging_station_node.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/charging_station_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_generate_messages_nodejs.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_generate_messages_nodejs.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_generate_messages_nodejs.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_generate_messages_nodejs"
+.PHONY : CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# clean rule for target.
+CMakeFiles/actionlib_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+.PHONY : CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32 "Built target vacuum_pkg_generate_messages_cpp"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+vacuum_pkg_generate_messages_cpp: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/rule
+
+.PHONY : vacuum_pkg_generate_messages_cpp
+
+# clean rule for target.
+CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_generate_messages_py.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_generate_messages_py.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_py.dir/build.make CMakeFiles/actionlib_generate_messages_py.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_py.dir/build.make CMakeFiles/actionlib_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_generate_messages_py"
+.PHONY : CMakeFiles/actionlib_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# clean rule for target.
+CMakeFiles/actionlib_generate_messages_py.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_py.dir/build.make CMakeFiles/actionlib_generate_messages_py.dir/clean
+.PHONY : CMakeFiles/actionlib_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_eus"
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# clean rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_lisp"
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# clean rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_msgs_generate_messages_py"
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# clean rule for target.
+CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+.PHONY : CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir
+
+# All Build rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_status_srv"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule
+
+# Convenience name for target.
+_vacuum_pkg_generate_messages_check_deps_status_srv: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule
+
+.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv
+
+# clean rule for target.
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/actionlib_generate_messages_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/actionlib_generate_messages_cpp.dir/all:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/depend
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target actionlib_generate_messages_cpp"
+.PHONY : CMakeFiles/actionlib_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/actionlib_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/actionlib_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# clean rule for target.
+CMakeFiles/actionlib_generate_messages_cpp.dir/clean:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+.PHONY : CMakeFiles/actionlib_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/actionlib_generate_messages_cpp.dir/clean
 
 .PHONY : clean
 
@@ -869,79 +1819,6 @@ clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir
-
-# All Build rule for target.
-CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all:
-	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/depend
-	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_status_srv"
-.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule
-
-# Convenience name for target.
-_vacuum_pkg_generate_messages_check_deps_status_srv: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/rule
-
-.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv
-
-# clean rule for target.
-CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean:
-	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
-.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
-CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
-CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
-CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
-CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_generate_messages"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/all
-
-# Include target in all.
-all: CMakeFiles/vacuum_pkg_generate_messages.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 13
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages: CMakeFiles/vacuum_pkg_generate_messages.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/vacuum_pkg_gennodejs.dir
 
 # All Build rule for target.
@@ -953,7 +1830,7 @@ CMakeFiles/vacuum_pkg_gennodejs.dir/all: CMakeFiles/vacuum_pkg_generate_messages
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vacuum_pkg_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/vacuum_pkg_gennodejs.dir/rule
@@ -974,311 +1851,116 @@ clean: CMakeFiles/vacuum_pkg_gennodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_gencpp.dir
+# Target rules for target CMakeFiles/vacuum_pkg_generate_messages.dir
 
 # All Build rule for target.
-CMakeFiles/vacuum_pkg_gencpp.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_gencpp"
-.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_gencpp: CMakeFiles/vacuum_pkg_gencpp.dir/rule
-
-.PHONY : vacuum_pkg_gencpp
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_gencpp.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_gencpp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_gencpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/robot_node.dir
-
-# All Build rule for target.
-CMakeFiles/robot_node.dir/all:
-	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/depend
-	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=16,17 "Built target robot_node"
-.PHONY : CMakeFiles/robot_node.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/depend
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_generate_messages"
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/all
 
 # Include target in all.
-all: CMakeFiles/robot_node.dir/all
+all: CMakeFiles/vacuum_pkg_generate_messages.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robot_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robot_node.dir/all
+CMakeFiles/vacuum_pkg_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 48
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/robot_node.dir/rule
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/rule
 
 # Convenience name for target.
-robot_node: CMakeFiles/robot_node.dir/rule
+vacuum_pkg_generate_messages: CMakeFiles/vacuum_pkg_generate_messages.dir/rule
 
-.PHONY : robot_node
-
-# clean rule for target.
-CMakeFiles/robot_node.dir/clean:
-	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/clean
-.PHONY : CMakeFiles/robot_node.dir/clean
+.PHONY : vacuum_pkg_generate_messages
 
 # clean rule for target.
-clean: CMakeFiles/robot_node.dir/clean
+CMakeFiles/vacuum_pkg_generate_messages.dir/clean:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages.dir/build.make CMakeFiles/vacuum_pkg_generate_messages.dir/clean
+.PHONY : CMakeFiles/vacuum_pkg_generate_messages.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/vacuum_pkg_generate_messages.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_lisp.dir
+# Target rules for target CMakeFiles/charging_station_action_client_node.dir
 
 # All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=25,26 "Built target vacuum_pkg_generate_messages_lisp"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages_lisp: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages_lisp
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_genlisp.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_genlisp.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target vacuum_pkg_genlisp"
-.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_genlisp: CMakeFiles/vacuum_pkg_genlisp.dir/rule
-
-.PHONY : vacuum_pkg_genlisp
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_genlisp.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_genlisp.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_genlisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=27,28 "Built target vacuum_pkg_generate_messages_nodejs"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages_nodejs: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages_nodejs
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/roscpp_generate_messages_py.dir
-
-# All Build rule for target.
-CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# clean rule for target.
-CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/vacuum_pkg_generate_messages_py.dir
-
-# All Build rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_msg.dir/all
-CMakeFiles/vacuum_pkg_generate_messages_py.dir/all: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/all
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/depend
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=29,30,31,32 "Built target vacuum_pkg_generate_messages_py"
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule
-
-# Convenience name for target.
-vacuum_pkg_generate_messages_py: CMakeFiles/vacuum_pkg_generate_messages_py.dir/rule
-
-.PHONY : vacuum_pkg_generate_messages_py
-
-# clean rule for target.
-CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
-.PHONY : CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/vacuum_pkg_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/charging_station_node.dir
-
-# All Build rule for target.
-CMakeFiles/charging_station_node.dir/all:
-	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/depend
-	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=3,4 "Built target charging_station_node"
-.PHONY : CMakeFiles/charging_station_node.dir/all
+CMakeFiles/charging_station_action_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/all
+CMakeFiles/charging_station_action_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/all
+CMakeFiles/charging_station_action_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_eus.dir/all
+CMakeFiles/charging_station_action_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_py.dir/all
+CMakeFiles/charging_station_action_client_node.dir/all: CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/depend
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=1,2 "Built target charging_station_action_client_node"
+.PHONY : CMakeFiles/charging_station_action_client_node.dir/all
 
 # Include target in all.
-all: CMakeFiles/charging_station_node.dir/all
+all: CMakeFiles/charging_station_action_client_node.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/charging_station_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/charging_station_node.dir/all
+CMakeFiles/charging_station_action_client_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 50
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/charging_station_action_client_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/charging_station_node.dir/rule
+.PHONY : CMakeFiles/charging_station_action_client_node.dir/rule
 
 # Convenience name for target.
-charging_station_node: CMakeFiles/charging_station_node.dir/rule
+charging_station_action_client_node: CMakeFiles/charging_station_action_client_node.dir/rule
 
-.PHONY : charging_station_node
-
-# clean rule for target.
-CMakeFiles/charging_station_node.dir/clean:
-	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/clean
-.PHONY : CMakeFiles/charging_station_node.dir/clean
+.PHONY : charging_station_action_client_node
 
 # clean rule for target.
-clean: CMakeFiles/charging_station_node.dir/clean
+CMakeFiles/charging_station_action_client_node.dir/clean:
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/clean
+.PHONY : CMakeFiles/charging_station_action_client_node.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/charging_station_action_client_node.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/robot_server_node.dir
+# Target rules for target CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir
 
 # All Build rule for target.
-CMakeFiles/robot_server_node.dir/all:
-	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/depend
-	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=18,19 "Built target robot_server_node"
-.PHONY : CMakeFiles/robot_server_node.dir/all
-
-# Include target in all.
-all: CMakeFiles/robot_server_node.dir/all
-
-.PHONY : all
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/depend
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num= "Built target _vacuum_pkg_generate_messages_check_deps_StatusFeedback"
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robot_server_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robot_server_node.dir/all
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/robot_server_node.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/rule
 
 # Convenience name for target.
-robot_server_node: CMakeFiles/robot_server_node.dir/rule
+_vacuum_pkg_generate_messages_check_deps_StatusFeedback: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/rule
 
-.PHONY : robot_server_node
-
-# clean rule for target.
-CMakeFiles/robot_server_node.dir/clean:
-	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/clean
-.PHONY : CMakeFiles/robot_server_node.dir/clean
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusFeedback
 
 # clean rule for target.
-clean: CMakeFiles/robot_server_node.dir/clean
+CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/clean:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/clean
+.PHONY : CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/clean
 
 .PHONY : clean
 
@@ -1327,7 +2009,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=8,9,10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=10,11,12,13 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1359,7 +2041,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=5,6,7 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=7,8,9 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1410,7 +2092,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=16,17 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1442,7 +2124,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=14,15 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

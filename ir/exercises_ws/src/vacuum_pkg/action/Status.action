@@ -1,0 +1,8 @@
+# goal
+int8 charge
+---
+# result
+bool isLevelReached
+---
+# feedback
+int8 chargeLevel

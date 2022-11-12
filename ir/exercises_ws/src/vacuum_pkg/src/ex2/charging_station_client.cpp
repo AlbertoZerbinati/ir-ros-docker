@@ -1,6 +1,6 @@
 #include <ros/ros.h>
-#include <vacuum_pkg/status_msg.h>
-#include <vacuum_pkg/status_srv.h>
+#include "vacuum_pkg/status_msg.h"
+#include "vacuum_pkg/status_srv.h"
 
 // Static map associating charging station IDs with their polling time in seconds
 std::map<std::string, int> charging_stations_polling_time { 

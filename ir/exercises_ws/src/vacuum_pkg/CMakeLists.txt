@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   message_generation
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -59,16 +60,15 @@ add_service_files(
 )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+  DIRECTORY action FILES Status.action
+)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
   std_msgs  # Or other packages containing msgs
+  actionlib_msgs
 )
 
 ################################################
@@ -101,7 +101,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS roscpp std_msgs message_runtime
+  CATKIN_DEPENDS roscpp std_msgs message_runtime actionlib
 #  INCLUDE_DIRS include
 #  LIBRARIES vacuum_pkg
 #  DEPENDS system_lib
@@ -135,6 +135,8 @@ add_executable(robot_node src/ex1/robot_pub.cpp)
 add_executable(charging_station_node src/ex1/charging_station_sub.cpp)
 add_executable(robot_server_node src/ex2/robot_server.cpp)
 add_executable(charging_station_client_node src/ex2/charging_station_client.cpp)
+add_executable(robot_action_server_node src/ex3/robot_action_server.cpp)
+add_executable(charging_station_action_client_node src/ex3/charging_station_action_client.cpp)
 
 
 ## Rename C++ executable without prefix
@@ -145,7 +147,12 @@ add_executable(charging_station_client_node src/ex2/charging_station_client.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(robot_node ${vacuum_pkg_EXPORTED_TARGETS})
+add_dependencies(charging_station_node ${vacuum_pkg_EXPORTED_TARGETS})
+add_dependencies(robot_server_node ${vacuum_pkg_EXPORTED_TARGETS})
+add_dependencies(charging_station_client_node ${vacuum_pkg_EXPORTED_TARGETS})
+add_dependencies(robot_action_server_node ${vacuum_pkg_EXPORTED_TARGETS})
+add_dependencies(charging_station_action_client_node ${vacuum_pkg_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(robot_node
@@ -158,6 +165,12 @@ target_link_libraries(robot_server_node
   ${catkin_LIBRARIES}
 )
 target_link_libraries(charging_station_client_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(robot_action_server_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(charging_station_action_client_node
   ${catkin_LIBRARIES}
 )
 

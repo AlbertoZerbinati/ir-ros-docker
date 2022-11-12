@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node name ="robot_server" pkg="vacuum_pkg" type="robot_action_server_node"/>
+    <node name ="charging_station_client" pkg="vacuum_pkg" type="charging_station_action_client_node"/>
+</launch>

@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg'
 export PYTHONPATH="/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

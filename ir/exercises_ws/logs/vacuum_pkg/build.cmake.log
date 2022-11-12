@@ -16,7 +16,8 @@ Not searching for unused variables given on the command line.
 [36m--[0m catkin 0.7.29
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
-[36m--[0m vacuum_pkg: 1 messages, 1 services
+[36m--[0m Generating .msg files for action vacuum_pkg/Status /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/action/Status.action
+[36m--[0m vacuum_pkg: 8 messages, 1 services
 [36m--[0m Configuring done
 [36m--[0m Generating done
 [36m--[0m Build files have been written to: /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg

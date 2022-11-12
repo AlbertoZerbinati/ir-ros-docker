@@ -78,6 +78,18 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -101,29 +113,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -134,6 +123,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named robot_action_server_node
+
+# Build rule for target.
+robot_action_server_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_action_server_node
+.PHONY : robot_action_server_node
+
+# fast build rule for target.
+robot_action_server_node/fast:
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/build
+.PHONY : robot_action_server_node/fast
+
+#=============================================================================
 # Target rules for targets named charging_station_client_node
 
 # Build rule for target.
@@ -179,6 +192,136 @@ charging_station_client_node: cmake_check_build_system
 charging_station_client_node/fast:
 	$(MAKE) -f CMakeFiles/charging_station_client_node.dir/build.make CMakeFiles/charging_station_client_node.dir/build
 .PHONY : charging_station_client_node/fast
+
+#=============================================================================
+# Target rules for targets named robot_server_node
+
+# Build rule for target.
+robot_server_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_server_node
+.PHONY : robot_server_node
+
+# fast build rule for target.
+robot_server_node/fast:
+	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/build
+.PHONY : robot_server_node/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_generate_messages_nodejs
+
+# Build rule for target.
+vacuum_pkg_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_nodejs
+.PHONY : vacuum_pkg_generate_messages_nodejs
+
+# fast build rule for target.
+vacuum_pkg_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build
+.PHONY : vacuum_pkg_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_genlisp
+
+# Build rule for target.
+vacuum_pkg_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_genlisp
+.PHONY : vacuum_pkg_genlisp
+
+# fast build rule for target.
+vacuum_pkg_genlisp/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/build
+.PHONY : vacuum_pkg_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named robot_node
+
+# Build rule for target.
+robot_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_node
+.PHONY : robot_node
+
+# fast build rule for target.
+robot_node/fast:
+	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/build
+.PHONY : robot_node/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_generate_messages_lisp
+
+# Build rule for target.
+vacuum_pkg_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_lisp
+.PHONY : vacuum_pkg_generate_messages_lisp
+
+# fast build rule for target.
+vacuum_pkg_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build
+.PHONY : vacuum_pkg_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_geneus
+
+# Build rule for target.
+vacuum_pkg_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_geneus
+.PHONY : vacuum_pkg_geneus
+
+# fast build rule for target.
+vacuum_pkg_geneus/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/build
+.PHONY : vacuum_pkg_geneus/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_generate_messages_eus
+
+# Build rule for target.
+vacuum_pkg_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_eus
+.PHONY : vacuum_pkg_generate_messages_eus
+
+# fast build rule for target.
+vacuum_pkg_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build
+.PHONY : vacuum_pkg_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_gencpp
+
+# Build rule for target.
+vacuum_pkg_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_gencpp
+.PHONY : vacuum_pkg_gencpp
+
+# fast build rule for target.
+vacuum_pkg_gencpp/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/build
+.PHONY : vacuum_pkg_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusAction
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusAction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusAction
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusAction
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusAction/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusAction.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusAction/fast
+
+#=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusGoal
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusGoal
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusGoal
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusGoal/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusGoal.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusGoal/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -207,17 +350,17 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusActionResult
 
 # Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
+_vacuum_pkg_generate_messages_check_deps_StatusActionResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusActionResult
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionResult
 
 # fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+_vacuum_pkg_generate_messages_check_deps_StatusActionResult/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionResult.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionResult/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_lisp
@@ -246,6 +389,32 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusResult
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusResult
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusResult
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusResult/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusResult.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusResult/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -259,6 +428,32 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named vacuum_pkg_generate_messages_py
+
+# Build rule for target.
+vacuum_pkg_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_py
+.PHONY : vacuum_pkg_generate_messages_py
+
+# fast build rule for target.
+vacuum_pkg_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/build
+.PHONY : vacuum_pkg_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -270,6 +465,32 @@ std_msgs_generate_messages_py: cmake_check_build_system
 std_msgs_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionFeedback.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
@@ -296,32 +517,6 @@ roscpp_generate_messages_eus: cmake_check_build_system
 roscpp_generate_messages_eus/fast:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_generate_messages_cpp
-
-# Build rule for target.
-vacuum_pkg_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_cpp
-.PHONY : vacuum_pkg_generate_messages_cpp
-
-# fast build rule for target.
-vacuum_pkg_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build
-.PHONY : vacuum_pkg_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_geneus
-
-# Build rule for target.
-vacuum_pkg_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_geneus
-.PHONY : vacuum_pkg_geneus
-
-# fast build rule for target.
-vacuum_pkg_geneus/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_geneus.dir/build.make CMakeFiles/vacuum_pkg_geneus.dir/build
-.PHONY : vacuum_pkg_geneus/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_lisp
@@ -363,6 +558,19 @@ download_extra_data/fast:
 .PHONY : download_extra_data/fast
 
 #=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
 # Target rules for targets named run_tests
 
 # Build rule for target.
@@ -387,19 +595,6 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 std_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_generate_messages_eus
-
-# Build rule for target.
-vacuum_pkg_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_eus
-.PHONY : vacuum_pkg_generate_messages_eus
-
-# fast build rule for target.
-vacuum_pkg_generate_messages_eus/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_eus.dir/build
-.PHONY : vacuum_pkg_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named vacuum_pkg_genpy
@@ -441,6 +636,19 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusActionGoal
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusActionGoal
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionGoal
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_StatusActionGoal/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusActionGoal.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusActionGoal/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -465,6 +673,149 @@ std_msgs_generate_messages_nodejs: cmake_check_build_system
 std_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_eus.dir/build.make CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named charging_station_node
+
+# Build rule for target.
+charging_station_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 charging_station_node
+.PHONY : charging_station_node
+
+# fast build rule for target.
+charging_station_node/fast:
+	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/build
+.PHONY : charging_station_node/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named vacuum_pkg_generate_messages_cpp
+
+# Build rule for target.
+vacuum_pkg_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_cpp
+.PHONY : vacuum_pkg_generate_messages_cpp
+
+# fast build rule for target.
+vacuum_pkg_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_cpp.dir/build
+.PHONY : vacuum_pkg_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_py.dir/build.make CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_status_srv
+
+# Build rule for target.
+_vacuum_pkg_generate_messages_check_deps_status_srv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_status_srv
+.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv
+
+# fast build rule for target.
+_vacuum_pkg_generate_messages_check_deps_status_srv/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -493,17 +844,17 @@ _vacuum_pkg_generate_messages_check_deps_status_msg/fast:
 .PHONY : _vacuum_pkg_generate_messages_check_deps_status_msg/fast
 
 #=============================================================================
-# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_status_srv
+# Target rules for targets named vacuum_pkg_gennodejs
 
 # Build rule for target.
-_vacuum_pkg_generate_messages_check_deps_status_srv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_status_srv
-.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv
+vacuum_pkg_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_gennodejs
+.PHONY : vacuum_pkg_gennodejs
 
 # fast build rule for target.
-_vacuum_pkg_generate_messages_check_deps_status_srv/fast:
-	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_status_srv.dir/build
-.PHONY : _vacuum_pkg_generate_messages_check_deps_status_srv/fast
+vacuum_pkg_gennodejs/fast:
+	$(MAKE) -f CMakeFiles/vacuum_pkg_gennodejs.dir/build.make CMakeFiles/vacuum_pkg_gennodejs.dir/build
+.PHONY : vacuum_pkg_gennodejs/fast
 
 #=============================================================================
 # Target rules for targets named vacuum_pkg_generate_messages
@@ -519,134 +870,30 @@ vacuum_pkg_generate_messages/fast:
 .PHONY : vacuum_pkg_generate_messages/fast
 
 #=============================================================================
-# Target rules for targets named vacuum_pkg_gennodejs
+# Target rules for targets named charging_station_action_client_node
 
 # Build rule for target.
-vacuum_pkg_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_gennodejs
-.PHONY : vacuum_pkg_gennodejs
+charging_station_action_client_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 charging_station_action_client_node
+.PHONY : charging_station_action_client_node
 
 # fast build rule for target.
-vacuum_pkg_gennodejs/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_gennodejs.dir/build.make CMakeFiles/vacuum_pkg_gennodejs.dir/build
-.PHONY : vacuum_pkg_gennodejs/fast
+charging_station_action_client_node/fast:
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/build
+.PHONY : charging_station_action_client_node/fast
 
 #=============================================================================
-# Target rules for targets named vacuum_pkg_gencpp
+# Target rules for targets named _vacuum_pkg_generate_messages_check_deps_StatusFeedback
 
 # Build rule for target.
-vacuum_pkg_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_gencpp
-.PHONY : vacuum_pkg_gencpp
+_vacuum_pkg_generate_messages_check_deps_StatusFeedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _vacuum_pkg_generate_messages_check_deps_StatusFeedback
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusFeedback
 
 # fast build rule for target.
-vacuum_pkg_gencpp/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_gencpp.dir/build.make CMakeFiles/vacuum_pkg_gencpp.dir/build
-.PHONY : vacuum_pkg_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named robot_node
-
-# Build rule for target.
-robot_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_node
-.PHONY : robot_node
-
-# fast build rule for target.
-robot_node/fast:
-	$(MAKE) -f CMakeFiles/robot_node.dir/build.make CMakeFiles/robot_node.dir/build
-.PHONY : robot_node/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_generate_messages_lisp
-
-# Build rule for target.
-vacuum_pkg_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_lisp
-.PHONY : vacuum_pkg_generate_messages_lisp
-
-# fast build rule for target.
-vacuum_pkg_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_lisp.dir/build
-.PHONY : vacuum_pkg_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_genlisp
-
-# Build rule for target.
-vacuum_pkg_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_genlisp
-.PHONY : vacuum_pkg_genlisp
-
-# fast build rule for target.
-vacuum_pkg_genlisp/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_genlisp.dir/build.make CMakeFiles/vacuum_pkg_genlisp.dir/build
-.PHONY : vacuum_pkg_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_generate_messages_nodejs
-
-# Build rule for target.
-vacuum_pkg_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_nodejs
-.PHONY : vacuum_pkg_generate_messages_nodejs
-
-# fast build rule for target.
-vacuum_pkg_generate_messages_nodejs/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_nodejs.dir/build
-.PHONY : vacuum_pkg_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named vacuum_pkg_generate_messages_py
-
-# Build rule for target.
-vacuum_pkg_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vacuum_pkg_generate_messages_py
-.PHONY : vacuum_pkg_generate_messages_py
-
-# fast build rule for target.
-vacuum_pkg_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/vacuum_pkg_generate_messages_py.dir/build.make CMakeFiles/vacuum_pkg_generate_messages_py.dir/build
-.PHONY : vacuum_pkg_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named charging_station_node
-
-# Build rule for target.
-charging_station_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 charging_station_node
-.PHONY : charging_station_node
-
-# fast build rule for target.
-charging_station_node/fast:
-	$(MAKE) -f CMakeFiles/charging_station_node.dir/build.make CMakeFiles/charging_station_node.dir/build
-.PHONY : charging_station_node/fast
-
-#=============================================================================
-# Target rules for targets named robot_server_node
-
-# Build rule for target.
-robot_server_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robot_server_node
-.PHONY : robot_server_node
-
-# fast build rule for target.
-robot_server_node/fast:
-	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/build
-.PHONY : robot_server_node/fast
+_vacuum_pkg_generate_messages_check_deps_StatusFeedback/fast:
+	$(MAKE) -f CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build.make CMakeFiles/_vacuum_pkg_generate_messages_check_deps_StatusFeedback.dir/build
+.PHONY : _vacuum_pkg_generate_messages_check_deps_StatusFeedback/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -808,6 +1055,60 @@ src/ex2/robot_server.cpp.s:
 	$(MAKE) -f CMakeFiles/robot_server_node.dir/build.make CMakeFiles/robot_server_node.dir/src/ex2/robot_server.cpp.s
 .PHONY : src/ex2/robot_server.cpp.s
 
+src/ex3/charging_station_action_client.o: src/ex3/charging_station_action_client.cpp.o
+
+.PHONY : src/ex3/charging_station_action_client.o
+
+# target to build an object file
+src/ex3/charging_station_action_client.cpp.o:
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/src/ex3/charging_station_action_client.cpp.o
+.PHONY : src/ex3/charging_station_action_client.cpp.o
+
+src/ex3/charging_station_action_client.i: src/ex3/charging_station_action_client.cpp.i
+
+.PHONY : src/ex3/charging_station_action_client.i
+
+# target to preprocess a source file
+src/ex3/charging_station_action_client.cpp.i:
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/src/ex3/charging_station_action_client.cpp.i
+.PHONY : src/ex3/charging_station_action_client.cpp.i
+
+src/ex3/charging_station_action_client.s: src/ex3/charging_station_action_client.cpp.s
+
+.PHONY : src/ex3/charging_station_action_client.s
+
+# target to generate assembly for a file
+src/ex3/charging_station_action_client.cpp.s:
+	$(MAKE) -f CMakeFiles/charging_station_action_client_node.dir/build.make CMakeFiles/charging_station_action_client_node.dir/src/ex3/charging_station_action_client.cpp.s
+.PHONY : src/ex3/charging_station_action_client.cpp.s
+
+src/ex3/robot_action_server.o: src/ex3/robot_action_server.cpp.o
+
+.PHONY : src/ex3/robot_action_server.o
+
+# target to build an object file
+src/ex3/robot_action_server.cpp.o:
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/src/ex3/robot_action_server.cpp.o
+.PHONY : src/ex3/robot_action_server.cpp.o
+
+src/ex3/robot_action_server.i: src/ex3/robot_action_server.cpp.i
+
+.PHONY : src/ex3/robot_action_server.i
+
+# target to preprocess a source file
+src/ex3/robot_action_server.cpp.i:
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/src/ex3/robot_action_server.cpp.i
+.PHONY : src/ex3/robot_action_server.cpp.i
+
+src/ex3/robot_action_server.s: src/ex3/robot_action_server.cpp.s
+
+.PHONY : src/ex3/robot_action_server.s
+
+# target to generate assembly for a file
+src/ex3/robot_action_server.cpp.s:
+	$(MAKE) -f CMakeFiles/robot_action_server_node.dir/build.make CMakeFiles/robot_action_server_node.dir/src/ex3/robot_action_server.cpp.s
+.PHONY : src/ex3/robot_action_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -816,48 +1117,67 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... edit_cache"
+	@echo "... robot_action_server_node"
 	@echo "... charging_station_client_node"
+	@echo "... robot_server_node"
+	@echo "... install/strip"
+	@echo "... vacuum_pkg_generate_messages_nodejs"
+	@echo "... vacuum_pkg_genlisp"
+	@echo "... robot_node"
+	@echo "... vacuum_pkg_generate_messages_lisp"
+	@echo "... vacuum_pkg_geneus"
+	@echo "... vacuum_pkg_generate_messages_eus"
+	@echo "... vacuum_pkg_gencpp"
+	@echo "... edit_cache"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusAction"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusGoal"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusActionResult"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusResult"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... vacuum_pkg_generate_messages_py"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusActionFeedback"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... vacuum_pkg_generate_messages_cpp"
-	@echo "... vacuum_pkg_geneus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... tests"
 	@echo "... download_extra_data"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... run_tests"
 	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... vacuum_pkg_generate_messages_eus"
 	@echo "... vacuum_pkg_genpy"
 	@echo "... clean_test_results"
 	@echo "... install/local"
 	@echo "... doxygen"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusActionGoal"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... _vacuum_pkg_generate_messages_check_deps_status_msg"
-	@echo "... _vacuum_pkg_generate_messages_check_deps_status_srv"
-	@echo "... vacuum_pkg_generate_messages"
-	@echo "... vacuum_pkg_gennodejs"
-	@echo "... vacuum_pkg_gencpp"
-	@echo "... robot_node"
-	@echo "... vacuum_pkg_generate_messages_lisp"
-	@echo "... vacuum_pkg_genlisp"
-	@echo "... install/strip"
-	@echo "... vacuum_pkg_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... vacuum_pkg_generate_messages_py"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... actionlib_generate_messages_lisp"
 	@echo "... test"
 	@echo "... charging_station_node"
-	@echo "... robot_server_node"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... vacuum_pkg_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_status_srv"
+	@echo "... rebuild_cache"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_status_msg"
+	@echo "... vacuum_pkg_gennodejs"
+	@echo "... vacuum_pkg_generate_messages"
+	@echo "... charging_station_action_client_node"
+	@echo "... _vacuum_pkg_generate_messages_check_deps_StatusFeedback"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
@@ -874,6 +1194,12 @@ help:
 	@echo "... src/ex2/robot_server.o"
 	@echo "... src/ex2/robot_server.i"
 	@echo "... src/ex2/robot_server.s"
+	@echo "... src/ex3/charging_station_action_client.o"
+	@echo "... src/ex3/charging_station_action_client.i"
+	@echo "... src/ex3/charging_station_action_client.s"
+	@echo "... src/ex3/robot_action_server.o"
+	@echo "... src/ex3/robot_action_server.i"
+	@echo "... src/ex3/robot_action_server.s"
 .PHONY : help
 
 

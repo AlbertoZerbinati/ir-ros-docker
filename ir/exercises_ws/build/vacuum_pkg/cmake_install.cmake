@@ -137,6 +137,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vacuum_pkg/action" TYPE FILE FILES "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/action/Status.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vacuum_pkg/msg" TYPE FILE FILES
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+    "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vacuum_pkg/cmake" TYPE FILE FILES "/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/catkin_generated/installspace/vacuum_pkg-msg-paths.cmake")
 endif()
 

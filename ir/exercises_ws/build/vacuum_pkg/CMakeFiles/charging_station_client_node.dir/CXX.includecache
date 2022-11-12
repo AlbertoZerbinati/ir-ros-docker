@@ -668,7 +668,7 @@ time.h
 ros/ros.h
 -
 vacuum_pkg/status_msg.h
--
+/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/src/ex2/vacuum_pkg/status_msg.h
 vacuum_pkg/status_srv.h
--
+/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/src/ex2/vacuum_pkg/status_srv.h
 

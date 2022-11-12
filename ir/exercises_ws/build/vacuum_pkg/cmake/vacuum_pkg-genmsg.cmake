@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "vacuum_pkg: 1 messages, 1 services")
+message(STATUS "vacuum_pkg: 8 messages, 1 services")
 
-set(MSG_I_FLAGS "-Ivacuum_pkg:/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ivacuum_pkg:/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg;-Ivacuum_pkg:/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,49 @@ add_custom_target(vacuum_pkg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" "actionlib_msgs/GoalID:vacuum_pkg/StatusResult:actionlib_msgs/GoalStatus:std_msgs/Header"
 )
 
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
 add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" "vacuum_pkg/status_msg:std_msgs/Header"
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" ""
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" ""
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" "actionlib_msgs/GoalID:vacuum_pkg/StatusFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" "actionlib_msgs/GoalID:vacuum_pkg/StatusGoal:std_msgs/Header"
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" ""
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" "actionlib_msgs/GoalID:vacuum_pkg/StatusGoal:std_msgs/Header:vacuum_pkg/StatusActionGoal:vacuum_pkg/StatusResult:vacuum_pkg/StatusFeedback:vacuum_pkg/StatusActionResult:actionlib_msgs/GoalStatus:vacuum_pkg/StatusActionFeedback"
+)
+
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
+add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "vacuum_pkg" "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" ""
 )
 
 #
@@ -34,9 +69,51 @@ add_custom_target(_vacuum_pkg_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
   "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_cpp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/vacuum_pkg
 )
 
@@ -60,9 +137,23 @@ add_custom_target(vacuum_pkg_generate_messages_cpp
 add_dependencies(vacuum_pkg_generate_messages vacuum_pkg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_cpp _vacuum_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,9 +166,51 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS vacuum_pkg_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
   "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_eus(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg
 )
 
@@ -101,9 +234,23 @@ add_custom_target(vacuum_pkg_generate_messages_eus
 add_dependencies(vacuum_pkg_generate_messages vacuum_pkg_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_eus _vacuum_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,9 +263,51 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS vacuum_pkg_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
   "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_lisp(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg
 )
 
@@ -142,9 +331,23 @@ add_custom_target(vacuum_pkg_generate_messages_lisp
 add_dependencies(vacuum_pkg_generate_messages vacuum_pkg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_lisp _vacuum_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,9 +360,51 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS vacuum_pkg_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
   "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_nodejs(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg
 )
 
@@ -183,9 +428,23 @@ add_custom_target(vacuum_pkg_generate_messages_nodejs
 add_dependencies(vacuum_pkg_generate_messages vacuum_pkg_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_nodejs _vacuum_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,9 +457,51 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS vacuum_pkg_generate_messages_nodejs
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
   "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
+)
+_generate_msg_py(vacuum_pkg
+  "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg
 )
 
@@ -224,9 +525,23 @@ add_custom_target(vacuum_pkg_generate_messages_py
 add_dependencies(vacuum_pkg_generate_messages vacuum_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/srv/status_srv.srv" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/msg/status_msg.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionFeedback.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusActionGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusGoal.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusAction.msg" NAME_WE)
+add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/vacuum_pkg/msg/StatusResult.msg" NAME_WE)
 add_dependencies(vacuum_pkg_generate_messages_py _vacuum_pkg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -248,6 +563,9 @@ endif()
 if(TARGET std_msgs_generate_messages_cpp)
   add_dependencies(vacuum_pkg_generate_messages_cpp std_msgs_generate_messages_cpp)
 endif()
+if(TARGET actionlib_msgs_generate_messages_cpp)
+  add_dependencies(vacuum_pkg_generate_messages_cpp actionlib_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/vacuum_pkg)
   # install generated code
@@ -258,6 +576,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/va
 endif()
 if(TARGET std_msgs_generate_messages_eus)
   add_dependencies(vacuum_pkg_generate_messages_eus std_msgs_generate_messages_eus)
+endif()
+if(TARGET actionlib_msgs_generate_messages_eus)
+  add_dependencies(vacuum_pkg_generate_messages_eus actionlib_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/vacuum_pkg)
@@ -270,6 +591,9 @@ endif()
 if(TARGET std_msgs_generate_messages_lisp)
   add_dependencies(vacuum_pkg_generate_messages_lisp std_msgs_generate_messages_lisp)
 endif()
+if(TARGET actionlib_msgs_generate_messages_lisp)
+  add_dependencies(vacuum_pkg_generate_messages_lisp actionlib_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/vacuum_pkg)
   # install generated code
@@ -280,6 +604,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
 endif()
 if(TARGET std_msgs_generate_messages_nodejs)
   add_dependencies(vacuum_pkg_generate_messages_nodejs std_msgs_generate_messages_nodejs)
+endif()
+if(TARGET actionlib_msgs_generate_messages_nodejs)
+  add_dependencies(vacuum_pkg_generate_messages_nodejs actionlib_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacuum_pkg)
@@ -292,4 +619,7 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/vacu
 endif()
 if(TARGET std_msgs_generate_messages_py)
   add_dependencies(vacuum_pkg_generate_messages_py std_msgs_generate_messages_py)
+endif()
+if(TARGET actionlib_msgs_generate_messages_py)
+  add_dependencies(vacuum_pkg_generate_messages_py actionlib_msgs_generate_messages_py)
 endif()

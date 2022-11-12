@@ -20,6 +20,7 @@ CMakeFiles/robot_node.dir/src/ex1/robot_pub.cpp.o
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
+ /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h
@@ -59,4 +60,5 @@ CMakeFiles/robot_node.dir/src/ex1/robot_pub.cpp.o
  /opt/ros/melodic/include/rosconsole/macros_generated.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
+ /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_msg.h
  /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/src/ex1/robot_pub.cpp
