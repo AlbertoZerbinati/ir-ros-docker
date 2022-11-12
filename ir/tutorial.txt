@@ -2,27 +2,46 @@ Notes from the first lecture in the lab.
 
 Basically a ROS introduction.
 
-ros = robot operating system. A framework to build programs for robots. modular. industry standard. large community.
-not an OS, not a programming language. programmable in C++ and Python mainly. 
-handles distributed computation. 
+ros = robot operating system. A framework to build programs for robots. modular.
+industry standard. large community. not an OS, not a programming language.
+programmable in C++ and Python mainly. handles distributed computation. 
 
-Modular: NODE-BASED solution. each program is a node that handles one part of the robot (vision, moving an arm, etc.).
+Modular: NODE-BASED solution. each program is a node that handles one part of
+the robot (vision, moving an arm, etc.).
 
-effectively it is a distributed system. messagging protocol across nodes: publish/subscribe messages (anonymus and asynchronous)
-there is also a master node controlling everything
-recording and playingback the messages
-logging system
-a message is called TOPIC (/topic) and is sent from one NODE (= program) to another
-many messages are shared concurrently and read asynchronously by subscribers
-can also be made synchronous
-global store available
-shareable and reusable
+effectively it is a distributed system. messagging protocol across nodes:
+publish/subscribe messages (anonymus and asynchronous) there is also a master
+node controlling everything recording and playingback the messages logging
+system a message is called TOPIC (/topic) and is sent from one NODE (= program)
+to another many messages are shared concurrently and read asynchronously by
+subscribers can also be made synchronous global store available shareable and
+reusable
 
----
-3 ways to talk between nodes:
-- async messages through a topic
-- services (client/server communication) for short/quick operations to be fulfilled
+--- 
+3 ways to talk between nodes: 
+- async messages through a topic 
+- services (client/server communication) for short/quick operations to be 
+fulfilled 
 - actions
 
-a srv (service) requires both request and response in the file definition
-we need a client and a service node
+a srv (service) requires both request and response in the file definition we
+need a client and a service node 
+
+--- 
+1) Topics should be used for continuous data
+streams (sensor data, robot state, ...).
+
+2) Services should be used for remote procedure calls that terminate quickly, e.g.
+for querying the state of a node or doing a quick calculation such as IK. They
+should never be used for longer running processes, in particular processes that
+might be required to preempt if exceptional situations occur and they should
+never change or depend on state to avoid unwanted side effects for other nodes.
+
+3) Actions should be used for everything that moves the robot or that runs for a
+longer time such as perception routines that are triggered by some node and need
+a couple of seconds to terminate. The most important property of actions is that
+they can be preempted and preemption should always be implemented cleanly by
+action servers. Another nice property of actions is that they can keep state for
+the lifetime of a goal, i.e. if executing two action goals in parallel on the
+same server, for each client a separate state instance can be kept since the
+goal is uniquely identified by its id.

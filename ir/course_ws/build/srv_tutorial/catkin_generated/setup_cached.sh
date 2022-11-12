@@ -8,6 +8,9 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/root/ir-ros-docker/ir/course_ws/build/srv_tutorial'
+export PYTHONPATH="/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/root/ir-ros-docker/ir/course_ws/src/srv_tutorial:$ROS_PACKAGE_PATH"

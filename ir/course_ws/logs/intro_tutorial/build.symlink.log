@@ -1,20 +1,20 @@
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/pkgconfig/intro_tutorial.pc
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/intro_tutorial/sub_node
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/intro_tutorial/pub_node
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/__init__.py
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/msg/__init__.py
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/msg/_msg1.py
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/msg1.lisp
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/_package_msg1.lisp
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/intro_tutorial-msg.asd
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/_package.lisp
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/roseus/ros/intro_tutorial/manifest.l
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/roseus/ros/intro_tutorial/msg/msg1.l
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorial-msg-paths.cmake
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorialConfig-version.cmake
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorial-msg-extras.cmake
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorialConfig.cmake
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/_index.js
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/msg/msg1.js
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/msg/_index.js
-Symlinking /root/ir-ros-docker/ir/course_ws/devel/include/intro_tutorial/msg1.h
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/pkgconfig/intro_tutorial.pc, /root/ir-ros-docker/ir/course_ws/devel/lib/pkgconfig/intro_tutorial.pc)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/intro_tutorial/sub_node, /root/ir-ros-docker/ir/course_ws/devel/lib/intro_tutorial/sub_node)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/intro_tutorial/pub_node, /root/ir-ros-docker/ir/course_ws/devel/lib/intro_tutorial/pub_node)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/python2.7/dist-packages/intro_tutorial/__init__.py, /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/__init__.py)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/python2.7/dist-packages/intro_tutorial/msg/__init__.py, /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/msg/__init__.py)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/lib/python2.7/dist-packages/intro_tutorial/msg/_msg1.py, /root/ir-ros-docker/ir/course_ws/devel/lib/python2.7/dist-packages/intro_tutorial/msg/_msg1.py)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/common-lisp/ros/intro_tutorial/msg/msg1.lisp, /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/msg1.lisp)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/common-lisp/ros/intro_tutorial/msg/_package_msg1.lisp, /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/_package_msg1.lisp)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/common-lisp/ros/intro_tutorial/msg/intro_tutorial-msg.asd, /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/intro_tutorial-msg.asd)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/common-lisp/ros/intro_tutorial/msg/_package.lisp, /root/ir-ros-docker/ir/course_ws/devel/share/common-lisp/ros/intro_tutorial/msg/_package.lisp)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/roseus/ros/intro_tutorial/manifest.l, /root/ir-ros-docker/ir/course_ws/devel/share/roseus/ros/intro_tutorial/manifest.l)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/roseus/ros/intro_tutorial/msg/msg1.l, /root/ir-ros-docker/ir/course_ws/devel/share/roseus/ros/intro_tutorial/msg/msg1.l)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/intro_tutorial/cmake/intro_tutorial-msg-paths.cmake, /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorial-msg-paths.cmake)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/intro_tutorial/cmake/intro_tutorialConfig-version.cmake, /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorialConfig-version.cmake)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/intro_tutorial/cmake/intro_tutorial-msg-extras.cmake, /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorial-msg-extras.cmake)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/intro_tutorial/cmake/intro_tutorialConfig.cmake, /root/ir-ros-docker/ir/course_ws/devel/share/intro_tutorial/cmake/intro_tutorialConfig.cmake)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/gennodejs/ros/intro_tutorial/_index.js, /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/_index.js)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/gennodejs/ros/intro_tutorial/msg/msg1.js, /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/msg/msg1.js)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/gennodejs/ros/intro_tutorial/msg/_index.js, /root/ir-ros-docker/ir/course_ws/devel/share/gennodejs/ros/intro_tutorial/msg/_index.js)
+Linked: (/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/include/intro_tutorial/msg1.h, /root/ir-ros-docker/ir/course_ws/devel/include/intro_tutorial/msg1.h)
