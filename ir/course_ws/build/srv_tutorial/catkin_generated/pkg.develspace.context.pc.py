@@ -1,0 +1,8 @@
+# generated from catkin/cmake/template/pkg.context.pc.in
+CATKIN_PACKAGE_PREFIX = ""
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/include".split(';') if "/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/include" != "" else []
+PROJECT_CATKIN_DEPENDS = "roscpp;std_msgs;message_runtime".replace(';', ' ')
+PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
+PROJECT_NAME = "srv_tutorial"
+PROJECT_SPACE_DIR = "/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial"
+PROJECT_VERSION = "0.0.0"

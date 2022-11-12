@@ -1,0 +1,6 @@
+devel_space: /root/ir-ros-docker/ir/course_ws/devel
+install: false
+install_space: /root/ir-ros-docker/ir/course_ws/install
+profile: default
+source_space: /root/ir-ros-docker/ir/course_ws/src
+workspace: /root/ir-ros-docker/ir/course_ws

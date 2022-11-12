@@ -1,0 +1,14 @@
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _srv_tutorial_generate_messages_check_deps_srv1
+[  0%] Built target std_msgs_generate_messages_py
+[ 18%] Built target server_node
+[ 27%] Built target srv_tutorial_generate_messages_nodejs
+[ 45%] Built target client_node
+[ 54%] Built target srv_tutorial_generate_messages_lisp
+[ 63%] Built target srv_tutorial_generate_messages_cpp
+[ 81%] Built target srv_tutorial_generate_messages_eus
+[100%] Built target srv_tutorial_generate_messages_py
+[100%] Built target srv_tutorial_generate_messages

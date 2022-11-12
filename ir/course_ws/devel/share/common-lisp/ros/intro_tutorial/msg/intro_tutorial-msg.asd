@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/course_ws/devel/.private/intro_tutorial/share/common-lisp/ros/intro_tutorial/msg/intro_tutorial-msg.asd

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/ir-ros-docker/ir/exercises_ws/install/setup.sh

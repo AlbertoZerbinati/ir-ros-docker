@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/lib/python2.7/dist-packages/srv_tutorial/srv/__init__.py

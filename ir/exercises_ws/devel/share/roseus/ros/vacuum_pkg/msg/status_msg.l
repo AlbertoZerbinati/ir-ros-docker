@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/share/roseus/ros/vacuum_pkg/msg/status_msg.l

@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/share/roseus/ros/srv_tutorial/manifest.l

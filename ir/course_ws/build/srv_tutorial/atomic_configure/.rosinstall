@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/setup.sh

@@ -1,0 +1,1 @@
+/root/ir-ros-docker/ir/course_ws/devel/.private/srv_tutorial/share/srv_tutorial/cmake/srv_tutorial-msg-extras.cmake
