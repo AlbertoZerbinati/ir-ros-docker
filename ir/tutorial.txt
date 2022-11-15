@@ -45,3 +45,7 @@ action servers. Another nice property of actions is that they can keep state for
 the lifetime of a goal, i.e. if executing two action goals in parallel on the
 same server, for each client a separate state instance can be kept since the
 goal is uniquely identified by its id.
+
+---
+BAG: store messages from Topics: subscribe and then playingback
+used for data logging and analysis
