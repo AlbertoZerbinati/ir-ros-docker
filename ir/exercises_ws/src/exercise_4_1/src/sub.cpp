@@ -15,9 +15,14 @@ void messageCallback(const apriltag_ros::AprilTagDetectionArray::ConstPtr &msg) 
         
         tf2_ros::Buffer tfBuffer;
         tf2_ros::TransformListener tfListener(tfBuffer);
-        geometry_msgs::TransformStamped tf = tfBuffer.lookupTransform("base_link", "rgb_camera_link", ros::Time(0), ros::Duration(3));
+        
+        // the fourth parameter tells to wait for a few seconds, to make sure
+        // that the transformation becomes available.
+        geometry_msgs::TransformStamped tf = 
+            tfBuffer.lookupTransform("base_link", "rgb_camera_link", ros::Time(0), ros::Duration(3));
         tf2::doTransform(pose, pose, tf);
-        ROS_INFO("\ntransformed pose #%d: (x=%f, y=%f, z=%f)\n-------", counter, pose.x, pose.y, pose.z);
+        ROS_INFO("\ntransformed pose #%d: (x=%f, y=%f, z=%f)\n-------", 
+            counter, pose.x, pose.y, pose.z);
     }
 }
 
