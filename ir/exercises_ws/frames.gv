@@ -1,0 +1,12 @@
+digraph G {
+"camera_base" -> "depth_camera_link"[label="Broadcaster: /play_1669042092014114722\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1669043469.443 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "camera_base"[label="Broadcaster: /robot_base\nAverage rate: 10.105 Hz\nMost recent transform: 1669043469.448 ( -0.005 sec old)\nBuffer length: 4.849 sec\n"];
+"depth_camera_link" -> "imu_link"[label="Broadcaster: /play_1669042092014114722\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1669043469.443 sec old)\nBuffer length: 0.000 sec\n"];
+"depth_camera_link" -> "rgb_camera_link"[label="Broadcaster: /play_1669042092014114722\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1669043469.443 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_base" -> "camera_body"[label="Broadcaster: /play_1669042092014114722\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1669043469.443 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_base" -> "camera_visor"[label="Broadcaster: /play_1669042092014114722\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1669043469.443 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1669043469.443"[ shape=plaintext ] ;
+ }->"base_link";
+}
