@@ -2,7 +2,7 @@
   "configurations": [
     {
       "browse": {
-        "databaseFilename": "${default}",
+        "databaseFilename": "${default}",saxliasmxlka
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
