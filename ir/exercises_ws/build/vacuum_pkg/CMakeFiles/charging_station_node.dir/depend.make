@@ -19,6 +19,7 @@ CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ro
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/message.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/names.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
@@ -58,5 +59,6 @@ CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ro
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
+CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_msg.h
 CMakeFiles/charging_station_node.dir/src/ex1/charging_station_sub.cpp.o: /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/src/ex1/charging_station_sub.cpp
 

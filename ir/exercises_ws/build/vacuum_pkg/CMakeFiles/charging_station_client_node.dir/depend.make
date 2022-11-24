@@ -19,6 +19,7 @@ CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/message.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/names.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
@@ -56,7 +57,12 @@ CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_msg.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_srv.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_srvRequest.h
+CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/include/vacuum_pkg/status_srvResponse.h
 CMakeFiles/charging_station_client_node.dir/src/ex2/charging_station_client.cpp.o: /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/src/ex2/charging_station_client.cpp
 

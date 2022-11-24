@@ -1,23 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_af756/fast"
-/usr/bin/make -f CMakeFiles/cmTC_af756.dir/build.make CMakeFiles/cmTC_af756.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7d0f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d0f1.dir/build.make CMakeFiles/cmTC_7d0f1.dir/build
 make[1]: Entering directory '/root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_af756.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_af756.dir/CheckSymbolExists.c.o   -c /root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_af756
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af756.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_af756.dir/CheckSymbolExists.c.o  -o cmTC_af756 
-CMakeFiles/cmTC_af756.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
-CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+Building C object CMakeFiles/cmTC_7d0f1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7d0f1.dir/CheckSymbolExists.c.o   -c /root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7d0f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d0f1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7d0f1.dir/CheckSymbolExists.c.o  -o cmTC_7d0f1 
+CMakeFiles/cmTC_7d0f1.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_af756.dir/build.make:97: recipe for target 'cmTC_af756' failed
-make[1]: *** [cmTC_af756] Error 1
+CMakeFiles/cmTC_7d0f1.dir/build.make:97: recipe for target 'cmTC_7d0f1' failed
+make[1]: *** [cmTC_7d0f1] Error 1
 make[1]: Leaving directory '/root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_af756/fast' failed
-make: *** [cmTC_af756/fast] Error 2
+Makefile:126: recipe for target 'cmTC_7d0f1/fast' failed
+make: *** [cmTC_7d0f1/fast] Error 2
 
 File /root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -37,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_659ea/fast"
-/usr/bin/make -f CMakeFiles/cmTC_659ea.dir/build.make CMakeFiles/cmTC_659ea.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3ecdf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ecdf.dir/build.make CMakeFiles/cmTC_3ecdf.dir/build
 make[1]: Entering directory '/root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_659ea.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_659ea.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_659ea
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_659ea.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_659ea.dir/CheckFunctionExists.c.o  -o cmTC_659ea -lpthreads 
+Building C object CMakeFiles/cmTC_3ecdf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3ecdf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3ecdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ecdf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3ecdf.dir/CheckFunctionExists.c.o  -o cmTC_3ecdf -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_659ea.dir/build.make:97: recipe for target 'cmTC_659ea' failed
-make[1]: *** [cmTC_659ea] Error 1
+CMakeFiles/cmTC_3ecdf.dir/build.make:97: recipe for target 'cmTC_3ecdf' failed
+make[1]: *** [cmTC_3ecdf] Error 1
 make[1]: Leaving directory '/root/ir-ros-docker/ir/exercises_ws/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_659ea/fast' failed
-make: *** [cmTC_659ea/fast] Error 2
+Makefile:126: recipe for target 'cmTC_3ecdf/fast' failed
+make: *** [cmTC_3ecdf/fast] Error 2
 
 

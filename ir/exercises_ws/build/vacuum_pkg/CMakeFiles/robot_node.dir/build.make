@@ -92,23 +92,23 @@ robot_node_EXTERNAL_OBJECTS =
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: CMakeFiles/robot_node.dir/build.make
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/libactionlib.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/libroscpp.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/librosconsole.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/libxmlrpcpp.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/libroscpp_serialization.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/librostime.so
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /opt/ros/melodic/lib/libcpp_common.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_system.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_thread.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libpthread.so
-/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node: CMakeFiles/robot_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /root/ir-ros-docker/ir/exercises_ws/devel/.private/vacuum_pkg/lib/vacuum_pkg/robot_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/robot_node.dir/link.txt --verbose=$(VERBOSE)
