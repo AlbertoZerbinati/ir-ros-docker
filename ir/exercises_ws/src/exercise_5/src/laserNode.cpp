@@ -34,29 +34,15 @@ std::vector<PolarPoint> rangesToPolarPoints(
  */
 int getNumberOfPeople(std::vector<float> ranges) {
     int result = 0;
-    bool isDetectingLeg = false;
-    bool isFirstLegDetected = false;
+    float prev = INFINITY;
 
-    for (float range : ranges) {
-        bool isDetection = range != INFINITY;
-
-        if (isDetectingLeg) {
-            if (!isDetection) {
-                if (isFirstLegDetected) {
-                    result++;
-                    isFirstLegDetected = false;
-                    isDetectingLeg = false;
-                } else {
-                    isFirstLegDetected = true;
-                }
-            }
-        } else {
-            if (isDetection) {
-                isDetectingLeg = true;
-            }
+    for(float range: ranges) {
+        if(prev == INFINITY && range != INFINITY) {
+            result++;
         }
+        prev = range;
     }
-
+    
     return result / 2;
 }
 
