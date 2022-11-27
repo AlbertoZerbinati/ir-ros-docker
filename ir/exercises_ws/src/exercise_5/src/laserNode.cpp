@@ -8,6 +8,24 @@
 #include "Point.h"
 
 /*
+ * Returns he list of points detected in the ranges vector, in polar coordinates.
+ * Discards every infinite measurement. 
+ */
+std::vector<PolarPoint> rangesToPolarPoints(std::vector<float> ranges, float angleMin, float angleIncrement) {
+    std::vector<PolarPoint> result;
+
+    for (std::vector<PolarPoint>::size_type i = 0; i < ranges.size(); ++i) {
+        float range = ranges[i];
+        if (range != INFINITY) {
+            float theta = angleMin + (i * angleIncrement);
+            result.push_back(PolarPoint(range, theta));
+        }
+    }
+
+    return result;
+}
+
+/*
  * Simple algorithm to determine the number of people, given a vector of ranges.
  *
  * It counts the number of objects in the scene (non-INFINITY detections),
@@ -43,20 +61,30 @@ int getNumberOfPeople(std::vector<float> ranges) {
 
 void callback(const sensor_msgs::LaserScan::ConstPtr& scan) {
     // TODO
-    // 1 relevant infos: scan->angle_min, angle_min, angle_incr
-    // 2 we should use these to determine the theta components of our input points
+    // 1 DONE relevant infos: scan->angle_min, angle_incr
+    // 2 DONE we should use these to determine the theta components of our input points
+    const float angleMin = scan->angle_min;
+    const float angleIncrement = scan->angle_increment;
 
     // TODO
     // 3 DONE use scan->ranges to read the scans
     // 4 DONE apply the algorithm to detect the number of people in the scene
-    // 5 represent the non-inf points as PolarPoints
+    // 5 DONE represent the non-inf points as PolarPoints
     // 6 translate them to CartesianPoints
     // 7 apply K-Means Lloyd's to get the solution, using number of clusters found at (4)
     // 8 print the solution
 
     // implementation of (3) and (4)
-    int numberOfPeople = getNumberOfPeople(scan->ranges);
+    const std::vector<float> ranges = scan->ranges;
+    int numberOfPeople = getNumberOfPeople(ranges);
     // std::cout << numberOfPeople << std::endl;
+
+    // implementation of (1), (2) and (5)
+    const std::vector<PolarPoint> polarInputPoints = rangesToPolarPoints(ranges, angleMin, angleIncrement);
+    // for (PolarPoint p: polarInputPoints) {
+    //     std::cout << p << std::endl; 
+    // }
+
 }
 
 int main(int argc, char** argv) {
