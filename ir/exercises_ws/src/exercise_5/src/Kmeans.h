@@ -29,9 +29,9 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
         if (std::find(centroids.begin(), centroids.end(), randItem) == centroids.end()) {
             centroids.push_back(randItem);
         }
-        std::cout << "initial centroid " << randItem;
+        // std::cout << "initial centroid " << randItem;
     }
-    std::cout << "\n\n";
+    // std::cout << "\n\n";
 
     for (int i = 0; i < epochs; ++i) {
         // For each centroid, compute distance from centroid to each point
@@ -76,9 +76,9 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
         }
 
         for (int i = 0; i < k; ++i) {
-            std::cout << "centroid " << centroids[i];
+            // std::cout << "centroid " << centroids[i];
         }
-        std::cout << "\n\n";
+        // std::cout << "\n\n";
     }
     return centroids;
 }
