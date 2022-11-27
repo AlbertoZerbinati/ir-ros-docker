@@ -1,38 +1,68 @@
+#include <ros/ros.h>
+#include <sensor_msgs/LaserScan.h>
+
 #include <iostream>
 #include <vector>
 
 #include "Kmeans.h"
 #include "Point.h"
 
-int main() {
-    std::vector<CartesianPoint> inputPoints{
-        CartesianPoint(4, 20),
-        CartesianPoint(4.2, 19.6),
-        CartesianPoint(3.9, 21.6),
-        CartesianPoint(10.1, 20),
-        CartesianPoint(9.5, 18.5),
-        CartesianPoint(9.6, 19.3),
-        CartesianPoint(11, 18),
-        CartesianPoint(18.3, 2),
-        CartesianPoint(18.2, 3),
-        CartesianPoint(17, 2.24),
-        CartesianPoint(19, -2.1),
-        CartesianPoint(17.8, -2.8),
-        CartesianPoint(18.7, -3),
-        CartesianPoint(18.1, -3.2),
-        CartesianPoint(3, -21),
-        CartesianPoint(2.1, -19.3),
-        CartesianPoint(1.8, -20.2),
-        CartesianPoint(8.9, -20),
-        CartesianPoint(7.5, -17.5),
-        CartesianPoint(8.6, -19.6),
-        CartesianPoint(10, -18.1)};
+/*
+ * Simple algorithm to determine the number of people, given a vector of ranges.
+ *
+ * It counts the number of objects in the scene (non-INFINITY detections),
+ * assuming that each one corresponds to a single leg, and returns half of that.
+ */
+int getNumberOfPeople(std::vector<float> ranges) {
+    int result = 0;
+    bool isDetectingLeg = false;
+    bool isFirstLegDetected = false;
 
-    std::vector<CartesianPoint> centroids = kMeansClustering(&inputPoints, 5, 3);
+    for (float range : ranges) {
+        bool isDetection = range != INFINITY;
 
-    for (auto it = begin(centroids); it != end(centroids); ++it) {
-        std::cout << *it << std::endl;
+        if (isDetectingLeg) {
+            if (!isDetection) {
+                if (isFirstLegDetected) {
+                    result++;
+                    isFirstLegDetected = false;
+                    isDetectingLeg = false;
+                } else {
+                    isFirstLegDetected = true;
+                }
+            }
+        } else {
+            if (isDetection) {
+                isDetectingLeg = true;
+            }
+        }
     }
 
-    return 0;
+    return result / 2;
+}
+
+void callback(const sensor_msgs::LaserScan::ConstPtr& scan) {
+    // TODO
+    // 1 relevant infos: scan->angle_min, angle_min, angle_incr
+    // 2 we should use these to determine the theta components of our input points
+
+    // TODO
+    // 3 DONE use scan->ranges to read the scans
+    // 4 DONE apply the algorithm to detect the number of people in the scene
+    // 5 represent the non-inf points as PolarPoints
+    // 6 translate them to CartesianPoints
+    // 7 apply K-Means Lloyd's to get the solution, using number of clusters found at (4)
+    // 8 print the solution
+
+    // implementation of (3) and (4)
+    int numberOfPeople = getNumberOfPeople(scan->ranges);
+    // std::cout << numberOfPeople << std::endl;
+}
+
+int main(int argc, char** argv) {
+    ros::init(argc, argv, "laser_node");
+
+    ros::NodeHandle n;
+    ros::Subscriber sub = n.subscribe("/scan", 1000, callback);
+    ros::spin();
 }

@@ -1,5 +1,5 @@
-#ifndef LIST_H_
-#define LIST_H_
+#ifndef POINTS_H_
+#define POINTS_H_
 
 #include <iostream>
 
