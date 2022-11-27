@@ -8,7 +8,7 @@
 #include "Point.h"
 
 /*
- * Returns he list of points detected in the ranges vector, in polar coordinates.
+ * Returns the list of points detected in the ranges vector, in polar coordinates.
  * Discards every infinite measurement.
  */
 std::vector<PolarPoint> rangesToPolarPoints(
@@ -94,9 +94,8 @@ void callback(const sensor_msgs::LaserScan::ConstPtr& scan) {
         cartesianInputPoints.push_back(toCartesian(p));
     }
 
-    const int numberKMeansInterations = 10;
     const std::vector<CartesianPoint> solution = kMeansClustering(
-        &cartesianInputPoints, numberKMeansInterations, numberOfPeople);
+        &cartesianInputPoints, numberOfPeople);
 
     ROS_INFO("The scanner detected %d people:", numberOfPeople);
 

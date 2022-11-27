@@ -21,7 +21,7 @@ double CartesianPoint::distance(const CartesianPoint& p) {
 }
 
 std::ostream& operator<<(std::ostream& os, const CartesianPoint& p) {
-    os << "(x=" << p.x << ", y=" << p.y << ")\n";
+    os << "(x=" << p.x << ", y=" << p.y << ")";
     return os;
 }
 
@@ -35,7 +35,7 @@ PolarPoint::PolarPoint(const double& r, const double& theta) {
 }
 
 std::ostream& operator<<(std::ostream& os, const PolarPoint& p) {
-    os << "(r=" << p.r << ", theta=" << p.theta << ")\n";
+    os << "(r=" << p.r << ", theta=" << p.theta << ")";
     return os;
 }
 
