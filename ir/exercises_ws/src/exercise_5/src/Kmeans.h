@@ -1,7 +1,7 @@
+#include <algorithm>
 #include <ctime>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 #include "Point.h"
 
@@ -16,7 +16,7 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
 
     if (k > n) {
         // not enough elements
-        return std::vector<CartesianPoint> {};
+        return std::vector<CartesianPoint>{};
     }
 
     // Randomly initialise centroids
@@ -24,7 +24,7 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
     // represents the cluster label.
     std::vector<CartesianPoint> centroids;
     srand(time(0));
-    while(centroids.size() < k) {
+    while (centroids.size() < k) {
         CartesianPoint randItem = points->at(rand() % n);
         if (std::find(centroids.begin(), centroids.end(), randItem) == centroids.end()) {
             centroids.push_back(randItem);

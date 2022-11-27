@@ -3,51 +3,72 @@
 
 #include <iostream>
 
+/**
+ * Class CartesianPoint
+ *
+ * Describe a point in the cartesian coordinates (x,y)
+ */
 class CartesianPoint {
    public:
-    double x, y;     // coordinates
-    int cluster;     // no default cluster
-    double minDist;  // default infinite dist to nearest cluster
+    /**
+     * Default constructor for a cartesian point. Initialize the point at (0.0, 0.0)
+     */
+    CartesianPoint();
 
-    CartesianPoint() : x(0.0),
-                       y(0.0),
-                       cluster(-1),
-                       minDist(__DBL_MAX__) {}
+    /**
+     * Initialize a Cartesian Point with the given values
+     * @param x x coordinate
+     * @param y y coordinate
+     */
+    CartesianPoint(const double& x, const double& y);
 
-    CartesianPoint(double x, double y) : x(x),
-                                         y(y),
-                                         cluster(-1),
-                                         minDist(__DBL_MAX__) {}
+    /**
+     * Calculate the Euclidean distance between the current and given point
+     * @param p CartesianPoint
+     */
+    double distance(const CartesianPoint& p);
 
-    double distance(CartesianPoint p) {
-        return (p.x - x) * (p.x - x) + (p.y - y) * (p.y - y);
-    }
+    friend std::ostream& operator<<(std::ostream& os, const CartesianPoint& p);
 
-    friend std::ostream& operator<<(std::ostream& os, const CartesianPoint& p) {
-        os << "(x=" << p.x << ", y=" << p.y << ")\n";
-        return os;
-    }
+    friend bool operator==(const CartesianPoint& lhs, const CartesianPoint& rhs);
 
-    friend bool operator==(const CartesianPoint& lhs, const CartesianPoint& rhs) {
-        return lhs.x == rhs.x && lhs.y == rhs.y;
-    }
+    double x, y;  // coordinates
+    int cluster = -1;
+    double minDist = __DBL_MAX__;
 };
 
+/**
+ * Class PolarPoint
+ *
+ * Describe a point in the polar coordinates (r,theta)
+ */
 class PolarPoint {
    public:
-    double r, theta;  // polar coordinates
+    /**
+     * Initialize a Polar Point with the given values
+     * @param r radius
+     * @param theta angle
+     */
+    PolarPoint(const double& r, const double& theta);
 
-    PolarPoint(double r, double theta) : r(r),
-                                         theta(theta) {}
+    friend std::ostream& operator<<(std::ostream& os, const PolarPoint& p);
 
-    friend std::ostream& operator<<(std::ostream& os, const PolarPoint& p) {
-        os << "(r=" << p.r << ", theta=" << p.theta << ")\n";
-        return os;
-    }
+    friend bool operator==(const PolarPoint& lhs, const PolarPoint& rhs);
 
-    friend bool operator==(const PolarPoint& lhs, const PolarPoint& rhs) {
-        return lhs.r == rhs.r && lhs.theta == rhs.theta;
-    }
+    double r;      // radius
+    double theta;  // angle
 };
+
+// operators prototype
+std::ostream& operator<<(std::ostream& os, const CartesianPoint& p);
+bool operator==(const CartesianPoint& lhs, const CartesianPoint& rhs);
+std::ostream& operator<<(std::ostream& os, const PolarPoint& p);
+bool operator==(const PolarPoint& lhs, const PolarPoint& rhs);
+
+/**
+ * Convert Polar Point to Cartesian Point
+ * @param p PolarPoint to be converted
+ */
+CartesianPoint toCartesian(const PolarPoint& p);
 
 #endif
