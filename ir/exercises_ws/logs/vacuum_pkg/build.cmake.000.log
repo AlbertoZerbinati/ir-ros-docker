@@ -42,15 +42,6 @@ Not searching for unused variables given on the command line.
 [36m--[0m Generating .msg files for action vacuum_pkg/Status /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/action/Status.action
 Generating for action Status
 [36m--[0m vacuum_pkg: 8 messages, 1 services
-[31m[1mCMake Error[0m at /root/ir-ros-docker/ir/exercises_ws/src/vacuum_pkg/CMakeLists.txt:129 (add_dependencies):
-  Cannot add target-level dependencies to non-existent target "robot_node".
-
-  The add_dependencies works for top-level logical targets created by the
-  add_executable, add_library, or add_custom_target commands.  If you want to
-  add file-level dependencies see the DEPENDS option of the add_custom_target
-  and add_custom_command commands.
-
-
-[36m--[0m Configuring incomplete, errors occurred!
-See also "/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles/CMakeOutput.log".
-See also "/root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg/CMakeFiles/CMakeError.log".
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /root/ir-ros-docker/ir/exercises_ws/build/vacuum_pkg

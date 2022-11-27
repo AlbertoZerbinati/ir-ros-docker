@@ -1,0 +1,6 @@
+exercise_5
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/exercise_5/cmake.lock /root/ir-ros-docker/ir/exercises_ws/devel/./cmake.lock
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/exercise_5/share/exercise_5/cmake/exercise_5Config.cmake /root/ir-ros-docker/ir/exercises_ws/devel/share/exercise_5/cmake/exercise_5Config.cmake
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/exercise_5/share/exercise_5/cmake/exercise_5Config-version.cmake /root/ir-ros-docker/ir/exercises_ws/devel/share/exercise_5/cmake/exercise_5Config-version.cmake
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/exercise_5/lib/pkgconfig/exercise_5.pc /root/ir-ros-docker/ir/exercises_ws/devel/lib/pkgconfig/exercise_5.pc
+/root/ir-ros-docker/ir/exercises_ws/devel/.private/exercise_5/lib/exercise_5/laser_node /root/ir-ros-docker/ir/exercises_ws/devel/lib/exercise_5/laser_node
