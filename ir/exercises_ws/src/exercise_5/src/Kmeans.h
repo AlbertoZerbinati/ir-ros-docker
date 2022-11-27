@@ -5,13 +5,14 @@
 
 #include "Point.h"
 
+const int EPOCHS = 10;
+
 /**
  * Perform k-means clustering
  * @param points - pointer to std::vector of points
- * @param epochs - number of k means iterations
  * @param k - the number of initial centroids
  */
-std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points, int epochs, int k) {
+std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points, int k) {
     int n = points->size();
 
     if (k > n) {
@@ -19,21 +20,37 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
         return std::vector<CartesianPoint>{};
     }
 
-    // Randomly initialise centroids
+    // Initialise centroids.
+    // Pick the first at random and then iteratively pick the most distant point,
+    // simulating k-means++, but without using the random distributions to pick.
     // The index of the centroid within the centroids std::vector
     // represents the cluster label.
     std::vector<CartesianPoint> centroids;
     srand(time(0));
-    while (centroids.size() < k) {
-        CartesianPoint randItem = points->at(rand() % n);
-        if (std::find(centroids.begin(), centroids.end(), randItem) == centroids.end()) {
-            centroids.push_back(randItem);
-        }
-        std::cout << "initial centroid " << randItem;
-    }
-    std::cout << "\n\n";
+    CartesianPoint firstCentroid = points->at(rand() % n);
+    centroids.push_back(firstCentroid);
+    // std::cout << "initial centroid " << firstCentroid << std::endl;
 
-    for (int i = 0; i < epochs; ++i) {
+    while (centroids.size() < k) {
+        std::vector<float> distances;
+        for (CartesianPoint p : *points) {
+            float minDistanceFromCentroids = INFINITY;
+            for (CartesianPoint c : centroids) {
+                if (c.distance(p) < minDistanceFromCentroids) {
+                    minDistanceFromCentroids = c.distance(p);
+                }
+            }
+            // std::cout << "point " << p << " min dist = " << minDistanceFromCentroids << std::endl;
+            distances.push_back(minDistanceFromCentroids);
+        }
+        // std::cout << points->size() << "     " << distances.size() << std::endl;
+        int newCentroidIndex = std::distance(
+            std::begin(distances), std::max_element(std::begin(distances), std::end(distances)));
+        centroids.push_back(points->at(newCentroidIndex));
+        // std::cout << "initial centroid " << points->at(newCentroidIndex) << " index " << newCentroidIndex << std::endl;
+    }
+
+    for (int i = 0; i < EPOCHS; ++i) {
         // For each centroid, compute distance from centroid to each point
         // and update point's cluster if necessary
         for (std::vector<CartesianPoint>::iterator c = begin(centroids); c != end(centroids); ++c) {
@@ -76,9 +93,9 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
         }
 
         for (int i = 0; i < k; ++i) {
-            std::cout << "centroid " << centroids[i];
+            // std::cout << "centroid " << centroids[i];
         }
-        std::cout << "\n\n";
+        // std::cout << "\n\n";
     }
     return centroids;
 }

@@ -8,10 +8,11 @@
 #include "Point.h"
 
 /*
- * Returns he list of points detected in the ranges vector, in polar coordinates.
- * Discards every infinite measurement. 
+ * Returns the list of points detected in the ranges vector, in polar coordinates.
+ * Discards every infinite measurement.
  */
-std::vector<PolarPoint> rangesToPolarPoints(std::vector<float> ranges, float angleMin, float angleIncrement) {
+std::vector<PolarPoint> rangesToPolarPoints(
+    std::vector<float> ranges, float angleMin, float angleIncrement) {
     std::vector<PolarPoint> result;
 
     for (std::vector<PolarPoint>::size_type i = 0; i < ranges.size(); ++i) {
@@ -70,21 +71,37 @@ void callback(const sensor_msgs::LaserScan::ConstPtr& scan) {
     // 3 DONE use scan->ranges to read the scans
     // 4 DONE apply the algorithm to detect the number of people in the scene
     // 5 DONE represent the non-inf points as PolarPoints
-    // 6 translate them to CartesianPoints
-    // 7 apply K-Means Lloyd's to get the solution, using number of clusters found at (4)
-    // 8 print the solution
+    // 6 DONE translate them to CartesianPoints
+    // 7 DONE apply K-Means Lloyd's to get the solution, using number of clusters found at (4)
+    // 8 DONE print the solution
+
+    const std::vector<float> ranges = scan->ranges;
 
     // implementation of (3) and (4)
-    const std::vector<float> ranges = scan->ranges;
     int numberOfPeople = getNumberOfPeople(ranges);
     // std::cout << numberOfPeople << std::endl;
 
     // implementation of (1), (2) and (5)
-    const std::vector<PolarPoint> polarInputPoints = rangesToPolarPoints(ranges, angleMin, angleIncrement);
+    const std::vector<PolarPoint> polarInputPoints = rangesToPolarPoints(
+        ranges, angleMin, angleIncrement);
     // for (PolarPoint p: polarInputPoints) {
-    //     std::cout << p << std::endl; 
+    //     std::cout << p << std::endl;
     // }
 
+    // implementation of (6), (7) and (8)
+    std::vector<CartesianPoint> cartesianInputPoints;
+    for (PolarPoint p : polarInputPoints) {
+        cartesianInputPoints.push_back(toCartesian(p));
+    }
+
+    const std::vector<CartesianPoint> solution = kMeansClustering(
+        &cartesianInputPoints, numberOfPeople);
+
+    ROS_INFO("The scanner detected %d people:", numberOfPeople);
+
+    for (CartesianPoint personPosition : solution) {
+        ROS_INFO_STREAM("- person at " << personPosition);
+    }
 }
 
 int main(int argc, char** argv) {
