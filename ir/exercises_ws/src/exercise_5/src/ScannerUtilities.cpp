@@ -1,35 +1,32 @@
+#include "ScannerUtilities.h"
+
+#include <math.h>
+
 #include <algorithm>
 #include <ctime>
 #include <iostream>
+#include <stdexcept>
 #include <vector>
 
 #include "Point.h"
 
 const int EPOCHS = 10;
 
-/**
- * Perform k-means clustering
- * @param points - pointer to std::vector of points
- * @param k - the number of initial centroids
- */
-std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points, int k) {
+std::vector<CartesianPoint> ScannerUtilities::kMeansClustering(std::vector<CartesianPoint>* points, int k) {
     int n = points->size();
 
     if (k > n) {
-        // not enough elements
-        return std::vector<CartesianPoint>{};
+        // Not enough elements
+        throw std::invalid_argument("k is greater than points size.");
     }
 
     // Initialise centroids.
     // Pick the first at random and then iteratively pick the most distant point,
     // simulating k-means++, but without using the random distributions to pick.
-    // The index of the centroid within the centroids std::vector
-    // represents the cluster label.
     std::vector<CartesianPoint> centroids;
     srand(time(0));
     CartesianPoint firstCentroid = points->at(rand() % n);
     centroids.push_back(firstCentroid);
-    // std::cout << "initial centroid " << firstCentroid << std::endl;
 
     while (centroids.size() < k) {
         std::vector<float> distances;
@@ -40,14 +37,11 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
                     minDistanceFromCentroids = c.distance(p);
                 }
             }
-            // std::cout << "point " << p << " min dist = " << minDistanceFromCentroids << std::endl;
             distances.push_back(minDistanceFromCentroids);
         }
-        // std::cout << points->size() << "     " << distances.size() << std::endl;
         int newCentroidIndex = std::distance(
             std::begin(distances), std::max_element(std::begin(distances), std::end(distances)));
         centroids.push_back(points->at(newCentroidIndex));
-        // std::cout << "initial centroid " << points->at(newCentroidIndex) << " index " << newCentroidIndex << std::endl;
     }
 
     for (int i = 0; i < EPOCHS; ++i) {
@@ -85,17 +79,42 @@ std::vector<CartesianPoint> kMeansClustering(std::vector<CartesianPoint>* points
 
             it->minDist = __DBL_MAX__;  // reset distance
         }
+
         // Compute the new centroids
         for (std::vector<CartesianPoint>::iterator c = begin(centroids); c != end(centroids); ++c) {
             int clusterId = c - begin(centroids);
             c->x = sumX[clusterId] / nPoints[clusterId];
             c->y = sumY[clusterId] / nPoints[clusterId];
         }
-
-        for (int i = 0; i < k; ++i) {
-            // std::cout << "centroid " << centroids[i];
-        }
-        // std::cout << "\n\n";
     }
     return centroids;
+}
+
+std::vector<PolarPoint> ScannerUtilities::rangesToPolarPoints(
+    std::vector<float> ranges, float angleMin, float angleIncrement) {
+    std::vector<PolarPoint> result;
+
+    for (std::vector<PolarPoint>::size_type i = 0; i < ranges.size(); ++i) {
+        float range = ranges[i];
+        if (range != INFINITY) {
+            float theta = angleMin + (i * angleIncrement);
+            result.push_back(PolarPoint(range, theta));
+        }
+    }
+
+    return result;
+}
+
+int ScannerUtilities::getNumberOfPeople(std::vector<float> ranges) {
+    int result = 0;
+    float prev = INFINITY;
+
+    for (float range : ranges) {
+        if (prev == INFINITY && range != INFINITY) {
+            result++;
+        }
+        prev = range;
+    }
+
+    return result / 2;
 }

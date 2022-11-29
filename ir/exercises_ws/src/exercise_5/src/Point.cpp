@@ -2,13 +2,6 @@
 
 #include <math.h>
 
-CartesianPoint::CartesianPoint() {
-    x = 0.0;
-    y = 0.0;
-    cluster = -1;
-    minDist = __DBL_MAX__;
-}
-
 CartesianPoint::CartesianPoint(const double& x, const double& y) {
     this->x = x;
     this->y = y;
